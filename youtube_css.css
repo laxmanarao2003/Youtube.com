@@ -1,0 +1,167 @@
+/************ Index.html page CSS *************/
+/************ Index.html page CSS *************/
+
+.d-flex ul{
+    list-style-type: none;
+}
+.fixed-top{
+    z-index: 1;
+    background-color: #000000f5;
+}
+section,.card-body{
+    background-color: #000000f5;
+}
+
+/* navigation decrease */
+.navreduce{
+    width:6%;
+}
+.navreduce a span{
+    display: none;
+}
+/* navigation increase */
+.navincrease{
+    width: 17%;
+}
+/* videos increase */
+.cardsincrease{
+    width: 83%;
+}
+/* videos decrease */
+.cardsdecrease{
+    width: 85%;
+}
+
+section{
+    z-index: -1;
+}
+#side-navbar{
+    overflow: hidden;
+    max-height: 510px;
+    position: fixed;
+}
+#side-navbar:hover{
+    overflow-y: auto;
+}
+#side-navbar::-webkit-scrollbar{
+    width:7px;
+}
+#side-navbar::-webkit-scrollbar-track{
+    background-color: black;
+}
+#side-navbar::-webkit-scrollbar-thumb{
+    background-color:rgba(255, 255, 255, 0.612);
+    border-radius: 10px;
+}
+#side-navbar::-webkit-scrollbar-thumb:hover{
+    background-color:rgba(141, 135, 135, 0.217);
+}
+ul li a{
+    text-decoration: none;
+}
+.searchinp{
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-width: 0.5px;
+    border-bottom-color: rgba(255,255,255,0.5);
+    border-top-color: rgba(255,255,255,0.5);
+    border-left-color: rgba(255,255,255,0.5);
+    border-right-color: none;
+    padding-left: 13px;
+    padding-right: 9px;
+}
+#searchinp:focus{
+    outline:none;
+    border: 1px solid #0d5eebf8;
+}
+#searchinp::placeholder{
+    padding-left: 1px;
+}
+#searchinp{
+    caret-color: rgb(0, 0, 0);
+}
+#assistant{
+    background-color: rgba(141, 135, 135, 0.217);
+}
+#searchsubmit{
+    background-color: rgba(141, 135, 135, 0.217);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#searchsubmitclass{
+    background-color: rgba(141, 135, 135, 0.217);
+    border-radius: 15px;
+}
+.card:hover{
+    cursor: pointer;
+}
+p span{
+    font-size: small;
+}
+.nav-item:hover{
+    background-color: rgba(141, 135, 135, 0.217);
+    border-radius: 6px;
+}
+.dropdown-menu li a:hover{
+    background-color: rgba(141, 135, 135, 0.217);
+    border-radius: 7px;
+}
+.dropdown-menu{
+    max-height: 560px;
+    overflow: none;
+}
+.dropdown-menu:hover{
+    overflow: auto;
+}
+.dropdown-menu::-webkit-scrollbar{
+    width:7px;
+}
+.dropdown-menu::-webkit-scrollbar-track{
+    background-color: black;
+}
+.dropdown-menu::-webkit-scrollbar-thumb{
+    background-color:rgba(255, 255, 255, 0.612);
+    border-radius: 10px;
+}
+.dropdown-menu::-webkit-scrollbar-thumb:hover{
+    background-color:rgba(141, 135, 135, 0.217);
+}
+
+/************ END Index.html page CSS *************/
+/************ END Index.html page CSS *************/
+
+
+
+
+
+/************ Video playing page CSS *************/
+
+#videosrc{
+    max-height: 440px;
+}
+#like-dislike-bg,#share-bg,#ellipsis-bg{
+    background-color: rgba(141, 135, 135, 0.217);
+}
+#ellipsis-card{
+    cursor: pointer;
+}
+.comment-inp{
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-width: 1px;
+    outline: none;
+    caret-color: azure;
+}
+.comment-inp::placeholder{
+    color: azure;
+    font-size: small;
+}
+.comment-inp:focus{
+    color: azure;
+    font-size: small;
+}
+.reply-bg:hover{
+    background-color: rgba(141, 135, 135, 0.217);
+}
+/************ Video playing page CSS *************/
