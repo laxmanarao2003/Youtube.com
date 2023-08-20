@@ -73,12 +73,13 @@ ul li a{
 #searchinp:focus{
     outline:none;
     border: 1px solid #0d5eebf8;
+    color: #fff;
 }
 #searchinp::placeholder{
     padding-left: 1px;
 }
 #searchinp{
-    caret-color: rgb(0, 0, 0);
+    caret-color: rgb(255, 255, 255);
 }
 #assistant{
     background-color: rgba(141, 135, 135, 0.217);
@@ -164,4 +165,5 @@ p span{
 .reply-bg:hover{
     background-color: rgba(141, 135, 135, 0.217);
 }
+
 /************ Video playing page CSS *************/
