@@ -1,6 +1,8 @@
 /************ Index.html page JS *************/
 /************ Index.html page JS *************/
 
+//ScrollReveal().reveal('.card',{ delay: 100 });
+
 let ele=document.querySelectorAll("#nav-items .nav-link");
 let card=document.querySelectorAll(".card");
 let cardtext=document.querySelectorAll(".card-text");
@@ -148,7 +150,7 @@ else{
 }
 
 // setting height and width to each card:)
-card.forEach(e=>{
+card.forEach((e)=>{
     e.classList.add("mt-4");
     e.classList.add("border-0");
     e.style.height="320px";
