@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="author" content="Laxmana Rao">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" width="intial-scale-1,width=device-width">
+        <meta http-equiv="refresh" content="">
+
+        <!----------------------------- FAVICON --------------------------------->
+        <link rel="icon" href=".\logo.png"  type="image/x-icon">        
+
+        <!-------------------------External CSS ---------------------------------->
+        <link rel="stylesheet" href=".\youtube_css.css" type="text/css">
+
+        <!------------------------------- JQUERY-JS-CDN -------------------------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!----------------------------- Fontawesome-JS-CDN -------------------------->
+        <script src="https://kit.fontawesome.com/832f4883ab.js" crossorigin="anonymous"></script>
+
+        <!----------------------------- Typed-JS-CDN ----------------------------->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+        <!---------------------------- Scroll Reveal-JS-CDN ------------------------->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--------------------------- BOOTSTRAP-Css-CDN --------------------------->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- --------------------- BOOTSTRAP-JavaScript-CDN ---------------------------->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!------------------------ BOOTSTRAP-JQuery-CDN -------------------------->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    </head>
+<body>
+    <!---------- Header Section-------------->
+    <!---------- Header Section-------------->
+    <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
+        <div class="container-fluid d-flex justify-content-between ">
+            <div class="navbar-brand">
+                <a href="#" class="text-white h5 mx-3" data-bs-toggle="offcanvas" id="threebars" data-bs-target="#offcanvas-as-nav"><i class="fa-solid fa-bars"></i></a>
+                <a href=".\index.html" class="text-white text-decoration-none h5"><i class="fa-brands fa-youtube text-danger pe-1"></i>YOUTUBE<sup class="h6 ps-1" style="font-size:small;font-weight: 400;">IN</sup></a>
+            </div>
+            <div class="ms-auto">
+                <div class="d-flex">
+                    <input type="search" class="col-12 bg-dark searchinp" id="searchinp" name="searchinp" placeholder="Search">
+                    <a href="#" class="btn searchicon" id="searchsubmit"><i class="fa-solid fa-magnifying-glass text-light"></i></a>
+                    <button class="btn rounded-circle ms-2" data-bs-toggle="modal" data-bs-target="#assistantmodal" id="assistant"><i class="fa-solid fa-microphone text-light"></i></button>
+                </div>
+            </div>
+            <div class="ms-auto" id="loginprofile">
+                <div class="d-flex me-2">
+                    <a href="#" class="btn rounded-circle videocall"><i class="fa-solid fa-video text-light"></i></a>
+                    <a href="#" class="btn rounded-circle notify"><i class="fa-regular fa-bell text-light"></i></a>
+                    <div class="dropstart">
+                        <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown"><img src=".\user_profile.jpg" alt="user profile" style="height: 25px;width: 25px;" class="rounded-circle"></a>
+                      <ul class="dropdown-menu rounded rounded-5 px-3 bg-dark">
+                        <li><a class="text-white" href="#">
+                            <div class="d-flex align-items-center">
+                                <div class="">
+                                    <img src=".\user_profile.jpg" alt="user profile" style="height: 30px;width: 30px;" class="rounded-circle">
+                                </div>
+                                <div class="ms-3">
+                                    <h6>Laxmana Rao Arasavilli</h6>
+                                    <h6>@laxmanarao_lendi408</h6>
+                                    <a href="#" class=""><h6>Manage your Google Account</h6></a>
+                                </div>
+                            </div>
+                        </a></li>
+                        <li><a class="dropdown-item text-white" href="#"><i class="me-3 fa-solid fa-user"></i>Your channel</a></li>
+                        <li><a class="dropdown-item text-white" href="#"><i class="me-3 fa-brands fa-youtube"></i>Youtube studio</a></li>
+                        <li><a class="dropdown-item text-white" href="#"><i class="me-3 fa-solid fa-repeat"></i>Switch account</a></li>
+                        <li><a class="dropdown-item text-white" href="#"><i class="me-3 fa-solid fa-arrow-right-from-bracket"></i>Sign out</a></li>
+                        <hr class="dropdown-divider text-white">
+                        <li><a class="dropdown-item text-white" href="#"><i class="me-3 fa-solid fa-sack-dollar"></i>Purchases and memberships</a></li>
+                        <li><a class="dropdown-item text-white" href="#"><i class="me-3 fa-solid fa-database"></i>Your data in youtube</a></li>
+                        <hr class="dropdown-divider text-white">
+                        <li><a class="dropdown-item text-white" href="#"><i class="me-3 fa-solid fa-moon"></i>Appearance: Device theme</a></li>
+                        <li><a class="dropdown-item text-white" href="#"><i class="me-3 fa-solid fa-language"></i>Language: English</a></li>
+                        <li><a class="dropdown-item text-white" href="#"><i class="me-3 fa-solid fa-shield-halved"></i>Restricted Mode:Off</a></li>
+                        <li><a class="dropdown-item text-white" href="#"><i class="me-3 fa-solid fa-globe"></i>Loaction: India</a></li>
+                        <li><a class="dropdown-item text-white" href="#"><i class="me-3 fa-regular fa-keyboard"></i>Keyboard shortcuts</a></li>
+                        <hr class="dropdown-divider text-white">
+                        <li><a class="dropdown-item text-white" href="#"><i class="me-3 fa-solid fa-gear"></i>Settings</a></li>
+                        <hr class="dropdown-divider text-white">
+                        <li><a class="dropdown-item text-white" href="#"><i class="me-3 fa-solid fa-question"></i>Help</a></li>
+                        <li><a class="dropdown-item text-white" href="#"><i class="me-3 fa-solid fa-comment-dots"></i>Send feedback</a></li>
+                      </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal for search with your voice -->
+    <div class="modal fade" id="assistantmodal">
+        <div class="modal-dialog  modal-dialog-scrollable">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <button type="button" class="bg-light btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-light my-4">
+                    <h4 class="pb-2">Search with your voice</h4>
+                    To search by voice, go to your browser settings and allow access to microphone<br>
+                </div>
+                <div class="d-flex justify-content-center my-4">
+                    <button class="btn bg-info rounded-circle"><i class="fa-solid fa-microphone text-light"></i></button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------End Header Section-------------->
+    <!----------End Header Section-------------->
+
+    <!-------------- Vertical navigation bar-------------->
+    <!-------------- Vertical navigation bar-------------->
+    <!-------------- OFFCANVAS SIDE NAVBAR --------------->
+    <!-------------- OFFCANVAS SIDE NAVBAR --------------->
+    <div class="offcanvas offcanvas-start bg-dark" data-bs-scroll="true" id="offcanvas-as-nav">
+        <div class="offcanvas-header d-flex">
+            <a href="#" class="text-white me-3 h5" data-bs-dismiss="offcanvas" id="offthreebars"><i class="fa-solid fa-bars"></i></a>
+            <a href="#" class="text-white text-decoration-none me-auto h5"><i class="fa-brands fa-youtube text-danger pe-1"></i>YOUTUBE<sup class="h6 ps-1" style="font-size:small;font-weight: 400;">IN</sup></a>
+        </div>
+        <div class="offcanvas-body">
+            <div class="offnavincrease" id="offparentsidenav">
+                <div class="offnavincrease flex-column" id="offside-navbar">
+                    <ul class="nav d-flex flex-column" id="offnav-items">
+                        <li class="nav-item me-2 mt-2" style="background-color: rgba(141, 135, 135, 0.217);border-radius: 6px;" title="Home"><a href="#" class="nav-link text-white" id="nav"><i class="me-3 fa-solid fa-house"></i><span>Home</span></a></li>
+                        <li class="nav-item me-2" title="Shorts"><a href="#" class="nav-link text-white"><i class="me-3 fa-solid fa-film"></i><span>Shorts</span></a></li>
+                        <li class="nav-item me-2" title="Subscription"><a href="#" class="nav-link text-white"><i class="me-3 fa-solid fa-photo-film"></i><span>Subscription</span></a></li>
+                        <hr class="text-white">
+                        <li class="nav-item me-2" title="Library"><a href="#" class="nav-link text-white"><i class="me-3 fa-solid fa-book"></i><span>Library</span></a></li>
+                        <li class="nav-item me-2" title="History"><a href="#" class="nav-link text-white"><i class="me-3 fa-solid fa-clock-rotate-left"></i><span>History</span></a></li>
+                        <li class="nav-item me-2" title="Your videos"><a href="#" class="nav-link text-white"><i class="me-3 fa-brands fa-square-youtube"></i><span>Your videos</span></a></li>
+                        <li class="nav-item me-2" title="Watch later"><a href="#" class="nav-link text-white"><i class="me-3 fa-regular fa-clock"></i><span>Watch later</span></a></li>
+                        <li class="nav-item me-2" title="Liked videos"><a href="#" class="nav-link text-white"><i class="me-3 fa-regular fa-thumbs-up"></i><span>Liked videos</span></a></li>
+                        <li class="nav-item me-2" title="Sounds from shorts"><a href="#" class="nav-link text-white"><i class="me-3 fa-solid fa-list-check"></i><span>Sounds from shorts</span></a></li>
+                        <hr class="text-white">
+                        <li class="nav-item me-2" title="Trending"><a href="#" class="nav-link text-white"><i class="me-3 fa-solid fa-fire"></i><span>Trending</span></a></li>
+                        <li class="nav-item me-2" title="Shopping"><a href="#" class="nav-link text-white"><i class="me-3 fa-solid fa-bag-shopping"></i><span>Shopping</span></a></li>
+                        <li class="nav-item me-2" title="Music"><a href="#" class="nav-link text-white"><i class="me-3 fa-solid fa-music"></i><span>Music</span></a></li>
+                        <li class="nav-item me-2" title="Movies"><a href="#" class="nav-link text-white"><i class="me-3 fa-solid fa-clapperboard"></i><span>Movies</span></a></li>
+                        <li class="nav-item me-2" title="Live"><a href="#" class="nav-link text-white"><i class="me-3 fa-solid fa-location-dot"></i><span>Live</span></a></li>
+                        <li class="nav-item me-2" title="Gaming"><a href="#" class="nav-link text-white"><i class="me-3 fa-solid fa-gamepad"></i><span>Gaming</span></a></li>
+                        <li class="nav-item me-2" title="News"><a href="#" class="nav-link text-white"><i class="me-3 fa-regular fa-newspaper"></i><span>News</span></a></li>
+                        <li class="nav-item me-2" title="Sports"><a href="#" class="nav-link text-white"><i class="me-3 fa-solid fa-trophy"></i><span>Sports</span></a></li>
+                        <li class="nav-item me-2" title="Learning"><a href="#" class="nav-link text-white"><i class="me-3 fa-regular fa-lightbulb"></i><span>Learning</span></a></li>
+                        <li class="nav-item me-2" title="Fashion and Beauty"><a href="#" class="nav-link text-white"><i class="me-3 fa-solid fa-flask"></i><span>Fashion & Beauty</span></a></li>
+                        <hr class="text-white">
+                        <li class="nav-item me-2" title="Youtube premium"><a href="#" class="nav-link text-white"><i class="me-3 fa-brands fa-youtube text-danger"></i><span>Youtube premium</span></a></li>
+                        <li class="nav-item me-2" title="Youtube studio"><a href="#" class="nav-link text-white"><i class="me-3 fa-solid fa-music text-danger"></i><span>Youtube studio</span></a></li>
+                        <li class="nav-item me-2" title="Youtube Music"><a href="#" class="nav-link text-white"><i class="me-3 fa-regular fa-circle-play text-danger"></i><span>Youtube Music</span></a></li>
+                        <li class="nav-item me-2" title="Youtube Kids"><a href="#" class="nav-link text-white"><i class="me-3 fa-brands fa-square-youtube text-danger"></i><span>Youtube Kids</span></a></li>
+                        <hr class="text-white">
+                        <li class="nav-item me-2" title="Settings"><a href="#" class="nav-link text-white"><i class="me-3 fa-solid fa-gear"></i><span>Settings</span></a></li>
+                        <li class="nav-item me-2" title="Report History"><a href="#" class="nav-link text-white"><i class="me-3 fa-regular fa-flag"></i><span>Report history</span></a></li>
+                        <li class="nav-item me-2" title="Help"><a href="#" class="nav-link text-white"><i class="me-3 fa-solid fa-question"></i><span>Help</span></a></li>
+                        <li class="nav-item me-2" title="Send feedback"><a href="#" class="nav-link text-white"><i class="me-3 fa-solid fa-comment-dots"></i><span>send feedback</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------End Vertical navigation bar-------------->
+    <!--------------End Vertical navigation bar-------------->
+
+    <section class="" style="margin-top: 53px;">
+        <div class="container-fluid mt-5">
+            <div class="d-flex justify-content-center align-items-center mt-5">
+                <div>
+                    <video controls id="videosrc" autoplay>
+                        <source src=".\Cristiano-Ronaldo.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid bg-dark">
+        <div class="container">
+            <div class="row">
+                <!--------- Comment section ---------->
+                <!--------- Comment section ---------->
+                <div class="col-xl-8 col-lg-6">
+                    <h5 class="text-light pt-4">Cristiano Ronaldo Top 10 Impossible Goals ● Is He Human??</h5>
+                    <div class="d-flex align-items-center flex-wrap mt-3">
+                        <div class="d-flex align-items-center">
+                            <div class="" title="Profile">
+                                <img src=".\ronaldo.jpg" alt="user profile" style="height: 34px;width: 34px;cursor: pointer;" class="rounded-circle">
+                            </div>
+                            <div class="ms-3">
+                                <a href="#" class="text-light text-decoration-none h5" title="Mumbai Indians">Legasus</a>
+                                <h6 class="text-light" style="font-size: x-small;">1.05m Subscribers</h6>
+                            </div>
+                        </div>
+                        <div class="ms-4">
+                            <button type="button" class="btn bg-light badge rounded-pill py-2 px-3"><a href="#" class="text-dark text-decoration-none">Subscribe</a></button>
+                        </div>
+                        <div class="d-flex rounded rounded-pill ms-auto px-3 pt-2 ms-5" id="like-dislike-bg">
+                            <a href="#" class="text-decoration-none pe-2" title="I like this"><h6 class=" text-light"><i class="fa-regular fa-thumbs-up pe-2"></i>Like |</h6></a>
+                            <a href="#" class="text-decoration-none" title="I dislike this"><h6 class=" text-light"><i class="fa-regular fa-thumbs-down"></i></h6></a>
+                        </div>
+                        <div class="ms-2 rounded rounded-pill px-3 pt-2" id="share-bg" title="Share">
+                            <a href="#" class="text-decoration-none"><h6 class=" text-light"><i class="fa-regular fa-share-from-square me-2"></i>Share</h6></a>
+                        </div>
+                        <div class="ms-2 rounded rounded-pill px-3 pt-2" id="ellipsis-bg">
+                            <a href="#" class="text-decoration-none"><h6 class=" text-light"><i class="fa-solid fa-ellipsis"></i></h6></a>
+                        </div>
+                    </div>
+
+                    <!----------------- comments ---------------------->
+                    <!----------------- comments ---------------------->
+                    <div class="d-flex mt-4">
+                        <h5 class="text-light" style="font-size: medium;">10 comments</h5>
+                        <h5 class="text-light ms-3" style="font-size: medium;cursor: pointer;"><i class="fa-solid fa-arrow-down-wide-short"></i>Sort by</h5>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <img src=".\user_profile.jpg" alt="user profile" style="height: 32px;width: 32px;" class="rounded-circle me-3">
+                        <input type="text" class="comment-inp bg-dark col-xl-8 col-lg-7" placeholder="Add a Comment">
+                    </div>
+                    <div class="d-flex mt-4">
+                        <div class="pt-1" title="Profile">
+                            <img src=".\logo-v.jpg" alt="user profile" style="height: 32px;width: 32px;" class="rounded-circle">
+                        </div>
+                        <div class="ms-3">
+                            <a href="#" class="text-light text-decoration-none h6">@vaniruddharoy2308</a><span class="text-light ps-2" style="font-size: smaller;">2 months ago</span>
+                            <h6 class="text-light" style="font-size: small;">I am here after the quarter finals of wc Ronaldo's match..</h6>
+                            <div class="d-flex align-self-end">
+                                <a href="#" class="text-decoration-none pe-3 pt-2"><h6 class=" text-light"><i class="fa-regular fa-thumbs-up pe-2"></i>11 </h6></a>
+                                <a href="#" class="text-decoration-none pt-2"><h6 class=" text-light"><i class="fa-regular fa-thumbs-down"></i></h6></a>
+                                <a href="#" class="text-decoration-none rounded rounded-pill ms-4 reply-bg"><h6 class="text-light px-3 pt-2 " style="font-size: small;">Reply</h6></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <div class="pt-1" title="Profile">
+                            <img src=".\user_profile.jpg" alt="user profile" style="height: 32px;width: 32px;" class="rounded-circle">
+                        </div>
+                        <div class="ms-3">
+                            <a href="#" class="text-light text-decoration-none h6">Mumbai Indians</a><span class="text-light ps-2" style="font-size: smaller;">2 months ago</span>
+                            <h6 class="text-light" style="font-size: small;">Dedication, hard work all the time, and belief....🥳</h6>
+                            <div class="d-flex align-self-end">
+                                <a href="#" class="text-decoration-none pe-3 pt-2"><h6 class=" text-light"><i class="fa-regular fa-thumbs-up pe-2"></i>11 </h6></a>
+                                <a href="#" class="text-decoration-none pt-2"><h6 class=" text-light"><i class="fa-regular fa-thumbs-down"></i></h6></a>
+                                <a href="#" class="text-decoration-none rounded rounded-pill ms-4 reply-bg"><h6 class="text-light px-3 pt-2 " style="font-size: small;">Reply</h6></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <div class="pt-1" title="Profile">
+                            <img src=".\logo-a.jpg" alt="user profile" style="height: 32px;width: 32px;" class="rounded-circle">
+                        </div>
+                        <div class="ms-3">
+                            <a href="#" class="text-light text-decoration-none h6">Mumbai Indians</a><span class="text-light ps-2" style="font-size: smaller;">2 months ago</span>
+                            <h6 class="text-light" style="font-size: small;">There's no player like Cr7 in the World football history…</h6>
+                            <div class="d-flex align-self-end">
+                                <a href="#" class="text-decoration-none pe-3 pt-2"><h6 class=" text-light"><i class="fa-regular fa-thumbs-up pe-2"></i>11 </h6></a>
+                                <a href="#" class="text-decoration-none pt-2"><h6 class=" text-light"><i class="fa-regular fa-thumbs-down"></i></h6></a>
+                                <a href="#" class="text-decoration-none rounded rounded-pill ms-4 reply-bg"><h6 class="text-light px-3 pt-2 " style="font-size: small;">Reply</h6></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <div class="pt-1" title="Profile">
+                            <img src=".\logo-s.jpg" alt="user profile" style="height: 32px;width: 32px;" class="rounded-circle">
+                        </div>
+                        <div class="ms-3">
+                            <a href="#" class="text-light text-decoration-none h6">Mumbai Indians</a><span class="text-light ps-2" style="font-size: smaller;">2 months ago</span>
+                            <h6 class="text-light" style="font-size: small;">He has contributed a lot to his game and it shows..🥳😍</h6>
+                            <div class="d-flex align-self-end">
+                                <a href="#" class="text-decoration-none pe-3 pt-2"><h6 class=" text-light"><i class="fa-regular fa-thumbs-up pe-2"></i>11 </h6></a>
+                                <a href="#" class="text-decoration-none pt-2"><h6 class=" text-light"><i class="fa-regular fa-thumbs-down"></i></h6></a>
+                                <a href="#" class="text-decoration-none rounded rounded-pill ms-4 reply-bg"><h6 class="text-light px-3 pt-2 " style="font-size: small;">Reply</h6></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <div class="pt-1" title="Profile">
+                            <img src=".\logo-j.jpg" alt="user profile" style="height: 32px;width: 32px;" class="rounded-circle">
+                        </div>
+                        <div class="ms-3">
+                            <a href="#" class="text-light text-decoration-none h6">Mumbai Indians</a><span class="text-light ps-2" style="font-size: smaller;">2 months ago</span>
+                            <h6 class="text-light" style="font-size: small;">🤩The passion n energy he brings on field is REAL🎉</h6>
+                            <div class="d-flex align-self-end">
+                                <a href="#" class="text-decoration-none pe-3 pt-2"><h6 class=" text-light"><i class="fa-regular fa-thumbs-up pe-2"></i>11 </h6></a>
+                                <a href="#" class="text-decoration-none pt-2"><h6 class=" text-light"><i class="fa-regular fa-thumbs-down"></i></h6></a>
+                                <a href="#" class="text-decoration-none rounded rounded-pill ms-4 reply-bg"><h6 class="text-light px-3 pt-2 " style="font-size: small;">Reply</h6></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <div class="pt-1" title="Profile">
+                            <img src=".\logo-m.jpg" alt="user profile" style="height: 32px;width: 32px;" class="rounded-circle">
+                        </div>
+                        <div class="ms-3">
+                            <a href="#" class="text-light text-decoration-none h6">Mumbai Indians</a><span class="text-light ps-2" style="font-size: smaller;">2 months ago</span>
+                            <h6 class="text-light" style="font-size: small;">What A Brilliant Game he played! 🙌</h6>
+                            <div class="d-flex align-self-end">
+                                <a href="#" class="text-decoration-none pe-3 pt-2"><h6 class=" text-light"><i class="fa-regular fa-thumbs-up pe-2"></i>11 </h6></a>
+                                <a href="#" class="text-decoration-none pt-2"><h6 class=" text-light"><i class="fa-regular fa-thumbs-down"></i></h6></a>
+                                <a href="#" class="text-decoration-none rounded rounded-pill ms-4 reply-bg"><h6 class="text-light px-3 pt-2 " style="font-size: small;">Reply</h6></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <div class="pt-1" title="Profile">
+                            <img src=".\logo-b.jpg" alt="user profile" style="height: 32px;width: 32px;" class="rounded-circle">
+                        </div>
+                        <div class="ms-3">
+                            <a href="#" class="text-light text-decoration-none h6">Mumbai Indians</a><span class="text-light ps-2" style="font-size: smaller;">2 months ago</span>
+                            <h6 class="text-light" style="font-size: small;">He is a true legend of football 🔥🔥🔥👍❤️</h6>
+                            <div class="d-flex align-self-end">
+                                <a href="#" class="text-decoration-none pe-3 pt-2"><h6 class=" text-light"><i class="fa-regular fa-thumbs-up pe-2"></i>11 </h6></a>
+                                <a href="#" class="text-decoration-none pt-2"><h6 class=" text-light"><i class="fa-regular fa-thumbs-down"></i></h6></a>
+                                <a href="#" class="text-decoration-none rounded rounded-pill ms-4 reply-bg"><h6 class="text-light px-3 pt-2 " style="font-size: small;">Reply</h6></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <div class="pt-1" title="Profile">
+                            <img src=".\logo-k.jpg" alt="user profile" style="height: 32px;width: 32px;" class="rounded-circle">
+                        </div>
+                        <div class="ms-3">
+                            <a href="#" class="text-light text-decoration-none h6">Mumbai Indians</a><span class="text-light ps-2" style="font-size: smaller;">2 months ago</span>
+                            <h6 class="text-light" style="font-size: small;">He has achieved more than a human can!!🔥😍</h6>
+                            <div class="d-flex align-self-end">
+                                <a href="#" class="text-decoration-none pe-3 pt-2"><h6 class=" text-light"><i class="fa-regular fa-thumbs-up pe-2"></i>11 </h6></a>
+                                <a href="#" class="text-decoration-none pt-2"><h6 class=" text-light"><i class="fa-regular fa-thumbs-down"></i></h6></a>
+                                <a href="#" class="text-decoration-none rounded rounded-pill ms-4 reply-bg"><h6 class="text-light px-3 pt-2 " style="font-size: small;">Reply</h6></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <div class="pt-1" title="Profile">
+                            <img src=".\logo-g.jpg" alt="user profile" style="height: 32px;width: 32px;" class="rounded-circle">
+                        </div>
+                        <div class="ms-3">
+                            <a href="#" class="text-light text-decoration-none h6">Mumbai Indians</a><span class="text-light ps-2" style="font-size: smaller;">2 months ago</span>
+                            <h6 class="text-light" style="font-size: small;">Ronaldo is really an impossible man to be replaced. He is amazing!🥳😍</h6>
+                            <div class="d-flex align-self-end">
+                                <a href="#" class="text-decoration-none pe-3 pt-2"><h6 class=" text-light"><i class="fa-regular fa-thumbs-up pe-2"></i>11 </h6></a>
+                                <a href="#" class="text-decoration-none pt-2"><h6 class=" text-light"><i class="fa-regular fa-thumbs-down"></i></h6></a>
+                                <a href="#" class="text-decoration-none rounded rounded-pill ms-4 reply-bg"><h6 class="text-light px-3 pt-2 " style="font-size: small;">Reply</h6></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------- Suggest videos section ---------->
+                <!--------- Suggest videos section ---------->
+                <div class="d-flex flex-column col-xl-4 col-lg-6 mt-3 mb-2" style="cursor: pointer;">
+                    <div class="d-flex align-items-center mb-3 mb-3">
+                        <div>
+                            <img onclick="location.href='.\\Isro-video.html'" style="width: 170px;height: 130px;" class="rounded rounded-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1wvO_wO0vxvmlejoKTJ0nTxSyGLclkPOSFQ&usqp=CAU" alt="">
+                        </div>
+                        <div class="ms-2">
+                            <div class="d-flex justify-content-between">
+                                <span class="card-title text-light">Chandrayan-3 Live </span>
+                                <div class="dropdown">
+                                    <span data-bs-toggle="dropdown" id="ellipsis-card"><i class="text-light fa-solid fa-ellipsis-vertical"></i></span>
+                                    <ul class="dropdown-menu bg-dark rounded rounded-5 bg-dark">
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-cart-plus"></i>Add to queue</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-clock"></i>Save to watch later</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-plus"></i>Save to playlist</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-file-arrow-down"></i> Download</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-share-from-square"></i>Share</a></li>
+                                        <hr class="dropdown-divider text-light"></hr>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-circle-xmark"></i>Not interested</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-minus"></i>Don't recommend channel</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-flag"></i>Report</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p onclick="location.href='.\\Isro-video.html'" class="card-text text-light">Morbi in sem quis dui placerat ornare<br><span class="" >Isro Official<br>4.5M views &#8226; 1 Month ago</span></p>             
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3" style="cursor: pointer;">
+                        <div>
+                            <img onclick="location.href='.\\video.html'" style="width: 170px;height: 130px;" class="rounded rounded-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbRPMHPV7eTCdSWrKFWVbEmsaG34xZ_ixqvg&usqp=CAU" alt="">
+                        </div>
+                        <div class="ms-2">
+                            <div class="d-flex justify-content-between">
+                                <span class="card-title text-light">Chandrayan-3 Live </span>
+                                <div class="dropdown">
+                                    <span data-bs-toggle="dropdown" id="ellipsis-card"><i class="text-light fa-solid fa-ellipsis-vertical"></i></span>
+                                    <ul class="dropdown-menu bg-dark rounded rounded-5 bg-dark">
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-cart-plus"></i>Add to queue</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-clock"></i>Save to watch later</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-plus"></i>Save to playlist</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-file-arrow-down"></i> Download</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-share-from-square"></i>Share</a></li>
+                                        <hr class="dropdown-divider text-light"></hr>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-circle-xmark"></i>Not interested</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-minus"></i>Don't recommend channel</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-flag"></i>Report</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p onclick="location.href='.\\video.html'" class="card-text text-light">Morbi in sem quis dui placerat ornare<br><span class="" >Isro Official<br>4.5M views &#8226; 1 Month ago</span></p>             
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3" style="cursor: pointer;">
+                        <div>
+                            <img style="width: 170px;height: 130px;" class="rounded rounded-3" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/photography-youtube-channel-cover-design-temp-template-2914ad98592c3727c664d38e4a96be18_screen.jpg?ts=1592649472" alt="">
+                        </div>
+                        <div class="ms-2">
+                            <div class="d-flex justify-content-between">
+                                <span class="card-title text-light">Chandrayan-3 Live </span>
+                                <div class="dropdown">
+                                    <span data-bs-toggle="dropdown" id="ellipsis-card"><i class="text-light fa-solid fa-ellipsis-vertical"></i></span>
+                                    <ul class="dropdown-menu bg-dark rounded rounded-5 bg-dark">
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-cart-plus"></i>Add to queue</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-clock"></i>Save to watch later</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-plus"></i>Save to playlist</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-file-arrow-down"></i> Download</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-share-from-square"></i>Share</a></li>
+                                        <hr class="dropdown-divider text-light"></hr>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-circle-xmark"></i>Not interested</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-minus"></i>Don't recommend channel</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-flag"></i>Report</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="card-text text-light">Morbi in sem quis dui placerat ornare<br><span class="" >Isro Official<br>4.5M views &#8226; 1 Month ago</span></p>             
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3" style="cursor: pointer;">
+                        <div>
+                            <img style="width: 170px;height: 130px;" class="rounded rounded-3" src="https://i.ytimg.com/vi/BWUIhEGpf44/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDhLmPNhL8acM1Pn7W6b3l7DJq2Hg" alt="">
+                        </div>
+                        <div class="ms-2">
+                            <div class="d-flex justify-content-between">
+                                <span class="card-title text-light">Chandrayan-3 Live </span>
+                                <div class="dropdown">
+                                    <span data-bs-toggle="dropdown" id="ellipsis-card"><i class="text-light fa-solid fa-ellipsis-vertical"></i></span>
+                                    <ul class="dropdown-menu bg-dark rounded rounded-5 bg-dark">
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-cart-plus"></i>Add to queue</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-clock"></i>Save to watch later</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-plus"></i>Save to playlist</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-file-arrow-down"></i> Download</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-share-from-square"></i>Share</a></li>
+                                        <hr class="dropdown-divider text-light"></hr>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-circle-xmark"></i>Not interested</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-minus"></i>Don't recommend channel</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-flag"></i>Report</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="card-text text-light">Morbi in sem quis dui placerat ornare<br><span class="" >Isro Official<br>4.5M views &#8226; 1 Month ago</span></p>             
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3" style="cursor: pointer;">
+                        <div>
+                            <img style="width: 170px;height: 130px;" class="rounded rounded-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRRg8wkMi_jgAv2Z7AtLmM3e-nCCCNJltvKA&usqp=CAU" alt="">
+                        </div>
+                        <div class="ms-2">
+                            <div class="d-flex justify-content-between">
+                                <span class="card-title text-light">Chandrayan-3 Live </span>
+                                <div class="dropdown">
+                                    <span data-bs-toggle="dropdown" id="ellipsis-card"><i class="text-light fa-solid fa-ellipsis-vertical"></i></span>
+                                    <ul class="dropdown-menu bg-dark rounded rounded-5 bg-dark">
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-cart-plus"></i>Add to queue</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-clock"></i>Save to watch later</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-plus"></i>Save to playlist</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-file-arrow-down"></i> Download</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-share-from-square"></i>Share</a></li>
+                                        <hr class="dropdown-divider text-light"></hr>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-circle-xmark"></i>Not interested</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-minus"></i>Don't recommend channel</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-flag"></i>Report</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="card-text text-light">Morbi in sem quis dui placerat ornare<br><span class="" >Isro Official<br>4.5M views &#8226; 1 Month ago</span></p>             
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3" style="cursor: pointer;">
+                        <div>
+                            <img style="width: 170px;height: 130px;" class="rounded rounded-3" src="https://marketplace.canva.com/EAFESwPxCGs/1/0/1600w/canva-gray-and-white-minimalist-simple-traveler-channel-youtube-channel-art-2PsEEpU9T5Q.jpg" alt="">
+                        </div>
+                        <div class="ms-2">
+                            <div class="d-flex justify-content-between">
+                                <span class="card-title text-light">Chandrayan-3 Live </span>
+                                <div class="dropdown">
+                                    <span data-bs-toggle="dropdown" id="ellipsis-card"><i class="text-light fa-solid fa-ellipsis-vertical"></i></span>
+                                    <ul class="dropdown-menu bg-dark rounded rounded-5 bg-dark">
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-cart-plus"></i>Add to queue</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-clock"></i>Save to watch later</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-plus"></i>Save to playlist</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-file-arrow-down"></i> Download</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-share-from-square"></i>Share</a></li>
+                                        <hr class="dropdown-divider text-light"></hr>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-circle-xmark"></i>Not interested</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-minus"></i>Don't recommend channel</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-flag"></i>Report</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="card-text text-light">Morbi in sem quis dui placerat ornare<br><span class="" >Isro Official<br>4.5M views &#8226; 1 Month ago</span></p>             
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3" style="cursor: pointer;">
+                        <div>
+                            <img style="width: 170px;height: 130px;" class="rounded rounded-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbNosVp44GS98As6OsnZEw-KB54GNJoqYKAQ&usqp=CAU" alt="">
+                        </div>
+                        <div class="ms-2">
+                            <div class="d-flex justify-content-between">
+                                <span class="card-title text-light">Chandrayan-3 Live </span>
+                                <div class="dropdown">
+                                    <span data-bs-toggle="dropdown" id="ellipsis-card"><i class="text-light fa-solid fa-ellipsis-vertical"></i></span>
+                                    <ul class="dropdown-menu bg-dark rounded rounded-5 bg-dark">
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-cart-plus"></i>Add to queue</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-clock"></i>Save to watch later</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-plus"></i>Save to playlist</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-file-arrow-down"></i> Download</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-share-from-square"></i>Share</a></li>
+                                        <hr class="dropdown-divider text-light"></hr>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-circle-xmark"></i>Not interested</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-minus"></i>Don't recommend channel</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-flag"></i>Report</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="card-text text-light">Morbi in sem quis dui placerat ornare<br><span class="" >Isro Official<br>4.5M views &#8226; 1 Month ago</span></p>             
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3" style="cursor: pointer;">
+                        <div>
+                            <img style="width: 170px;height: 130px;" class="rounded rounded-3" src="https://i.ytimg.com/vi/EAR7De6Goz4/maxresdefault.jpg" alt="">
+                        </div>
+                        <div class="ms-2">
+                            <div class="d-flex justify-content-between">
+                                <span class="card-title text-light">Chandrayan-3 Live </span>
+                                <div class="dropdown">
+                                    <span data-bs-toggle="dropdown" id="ellipsis-card"><i class="text-light fa-solid fa-ellipsis-vertical"></i></span>
+                                    <ul class="dropdown-menu bg-dark rounded rounded-5 bg-dark">
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-cart-plus"></i>Add to queue</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-clock"></i>Save to watch later</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-plus"></i>Save to playlist</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-file-arrow-down"></i> Download</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-share-from-square"></i>Share</a></li>
+                                        <hr class="dropdown-divider text-light"></hr>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-circle-xmark"></i>Not interested</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-minus"></i>Don't recommend channel</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-flag"></i>Report</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="card-text text-light">Morbi in sem quis dui placerat ornare<br><span class="" >Isro Official<br>4.5M views &#8226; 1 Month ago</span></p>             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-------------------------External JS ---------------------------------->
+    <script src="js_youtube.js"></script>
+</body>
+</html>
