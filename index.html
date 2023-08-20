@@ -47,11 +47,11 @@
                 <a href="#" class="text-white text-decoration-none h5" title="Youtube logo"><i class="fa-brands fa-youtube text-danger pe-1"></i>YOUTUBE<sup class="h6 ps-1" style="font-size:small;font-weight: 400;">IN</sup></a>
             </div>
             <div class="ms-auto">
-                <form class="d-flex">
-                    <input type="search" class="col-12 searchinp" id="searchinp" title="Enter text" name="searchinp" placeholder="Search">
+                <div class="d-flex">
+                    <input type="search" class="col-12 bg-dark searchinp" id="searchinp" title="Enter text" name="searchinp" placeholder="Search">
                     <a href="#" class="btn searchicon" id="searchsubmit" title="Search"><i class="fa-solid fa-magnifying-glass text-light"></i></a>
                     <button class="btn rounded-circle ms-2" title="Search with your voice" data-bs-toggle="modal" data-bs-target="#assistantmodal" id="assistant"><i class="fa-solid fa-microphone text-light"></i></button>
-                </form>
+                </div>
             </div>
             <div class="ms-auto" id="loginprofile">
                 <div class="d-flex me-2">
@@ -285,6 +285,29 @@
                         </div>
                     </div>
                     <div class="card" style="width:250px">
+                        <img class="card-img-top" onclick="location.href='.\\football.html'" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRRg8wkMi_jgAv2Z7AtLmM3e-nCCCNJltvKA&usqp=CAU" alt="Card image">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="card-title text-light">Football Cristiano Ronaldo</h6>
+                                <div class="dropup">
+                                    <button class="btn" id="dropdownMenu" data-bs-toggle="dropdown"><i class="text-light fa-solid fa-ellipsis-vertical"></i></button>
+                                    <ul class="dropdown-menu bg-dark rounded rounded-5 bg-dark">
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-cart-plus"></i>Add to queue</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-clock"></i>Save to watch later</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-plus"></i>Save to playlist</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-file-arrow-down"></i> Download</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-share-from-square"></i>Share</a></li>
+                                        <hr class="dropdown-divider text-light"></hr>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-circle-xmark"></i>Not interested</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-minus"></i>Don't recommend channel</a></li>
+                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-flag"></i>Report</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="card-text" onclick="location.href='.\\football.html'">Morbi in sem quis dui placerat ornare<br><span class="">The Indian Express <br>4.5M views &#8226; 1 Month ago</span></p>
+                        </div>
+                    </div>
+                    <div class="card" style="width:250px">
                         <img class="card-img-top" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/photography-youtube-channel-cover-design-temp-template-2914ad98592c3727c664d38e4a96be18_screen.jpg?ts=1592649472" alt="Card image">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
@@ -332,29 +355,6 @@
                     </div>
                     <div class="card" style="width:250px">
                         <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbRPMHPV7eTCdSWrKFWVbEmsaG34xZ_ixqvg&usqp=CAU" alt="Card image">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="card-title text-light">Lorem ipsum dolor sit amet</h6>
-                                <div class="dropup">
-                                    <button class="btn" id="dropdownMenu" data-bs-toggle="dropdown"><i class="text-light fa-solid fa-ellipsis-vertical"></i></button>
-                                    <ul class="dropdown-menu bg-dark rounded rounded-5 bg-dark">
-                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-cart-plus"></i>Add to queue</a></li>
-                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-clock"></i>Save to watch later</a></li>
-                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-plus"></i>Save to playlist</a></li>
-                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-solid fa-file-arrow-down"></i> Download</a></li>
-                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-share-from-square"></i>Share</a></li>
-                                        <hr class="dropdown-divider text-light"></hr>
-                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-circle-xmark"></i>Not interested</a></li>
-                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-square-minus"></i>Don't recommend channel</a></li>
-                                        <li><a class="dropdown-item text-light text-light" href="#"><i class="me-3 fa-regular fa-flag"></i>Report</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <p class="card-text">Morbi in sem quis dui placerat ornare<br><span class="">The Indian Express <br>4.5M views &#8226; 1 Month ago</span></p>
-                        </div>
-                    </div>
-                    <div class="card" style="width:250px">
-                        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRRg8wkMi_jgAv2Z7AtLmM3e-nCCCNJltvKA&usqp=CAU" alt="Card image">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <h6 class="card-title text-light">Lorem ipsum dolor sit amet</h6>
